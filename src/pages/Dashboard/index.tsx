@@ -48,7 +48,6 @@ const Dashboard: React.FC = () => {
       title: item.title,
       price: item.price,
       image_url: item.image_url,
-      quantity: 1,
     });
   }
 

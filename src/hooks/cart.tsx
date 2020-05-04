@@ -42,6 +42,7 @@ const CartProvider: React.FC = ({ children }) => {
       const productIndex = products.findIndex(p => p.id === product.id);
 
       if (productIndex === -1) {
+        product.quantity = 1;
         setProducts([...products, product]);
       } else {
         const productsUpdate = products.map(prod => {
